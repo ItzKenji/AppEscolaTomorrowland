@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.CadastroActivity">
 
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fundo" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_layer_gradient_cad" />
+
+
     <TextView
         android:id="@+id/textViewTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:gravity="center"
-        android:background="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="32dp"
-        android:textSize="12pt"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_button_normal"
+        android:gravity="center"
         android:text="Formulário de Cadastro"
         android:textColor="@color/white"
+        android:textSize="14pt"
+        android:textStyle="bold"
+        android:textAlignment="center"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,67 +41,115 @@
     <EditText
         android:id="@+id/editTextNome"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nome"
+        android:layout_height="34dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="180dp"
         android:layout_marginRight="16dp"
-        android:layout_marginTop="150dp"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo"
+        android:background="@drawable/bg_acesso"
+        android:hint="  Nome"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Marfim"
+        android:textSize="18dp"
+        android:textAlignment="center"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
 
     <EditText
         android:id="@+id/editTextCpf"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="CPF"
+        android:layout_height="34dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNome"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_acesso"
+        android:hint="  CPF"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Marfim"
+        android:textSize="18dp"
+        android:textAlignment="center"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNome" />
 
     <EditText
         android:id="@+id/editTextEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
+        android:layout_height="34dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCpf"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_acesso"
+        android:hint="  Email"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Marfim"
+        android:textSize="18dp"
+        android:textAlignment="center"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCpf"
+        android:layout_width="match_parent" />
 
     <EditText
         android:id="@+id/editTextSenha"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Senha"
+        android:layout_height="34dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_acesso"
+        android:hint="  Senha"
+        android:textColor="@color/white"
+        android:textColorHint="@color/Marfim"
+        android:textSize="18dp"
+        android:textAlignment="center"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <TextView
+        android:id="@+id/textViewAviso1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="*Verifique seus dados antes de SALVAR!*"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewAviso2"/>
+
+    <TextView
+        android:id="@+id/textViewAviso2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="*Não compartilhe seus dados com ninguem!*"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSenha" />
+
 
     <Button
         android:id="@+id/buttonSalvar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginRight="63dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/bg_button_normal"
         android:onClick="salvar"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/white"
-        android:textSize="10pt"
         android:text="SALVAR"
+        android:textAllCaps="false"
+        android:textColor="@color/Marfim"
+        android:textSize="22dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
+        app:layout_constraintRight_toRightOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

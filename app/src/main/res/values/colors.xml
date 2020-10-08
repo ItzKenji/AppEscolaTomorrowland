@@ -4,5 +4,19 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="white">#FFFFFF</color>
-    <color name="gray">#CCCCCC</color>
+    <color name="gray">#C6D6CDCD</color>
+    <color name="black">#000000</color>
+    <color name="blueMarinho">#00e5ff</color>
+    <color name="verdeEsc">#32cd32</color>
+    <color name="Marfim">#fffff0</color>
+    <color name="BlueTitulo">#395ec6</color>
+    <color name="AzulBebe">#00d2ff</color>
+    <color name="Laranja">#0AE815</color>
+    <color name="Laranja2">#EC440F</color>
+    <color name="Gold">#DFB418</color>
+
+
+
+
+
 </resources>

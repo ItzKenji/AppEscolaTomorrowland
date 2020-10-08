@@ -7,14 +7,232 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
 
-    <TextView
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16pt"
-        android:text="Main Activity"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="59dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Laranja2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/AzulBebe"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+            <TextView
+                android:id="@+id/textViewTituloMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_button_normal"
+                android:gravity="center"
+                android:text="BEM VINDO A ESCOLA TOMORROWLAND!"
+                android:textColor="@color/white"
+                android:textSize="14pt"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="17dp"
+                    app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/paragrafo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="20dp"
+                android:text="A Escola Tomorrowland foi fundada por nosso incrível fundador Gabriel Kenji Poli Ozaki e Ezequiel Perez, com o ideal de criarmos mentes brilhantes, capazes de deixarmos uma história de evolução em nosso universo ou possivelmente quem sabe, descobrirmos novos universos..."
+                android:textColor="@color/Marfim"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                />
+
+            <TextView
+                android:id="@+id/paragrafo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="20dp"
+                android:text="Nossa metodologia de ensino é direcionar mentes brilhantes e transformar pessoas em possíveis revolucionários da ciência, assim como os admiráveis Albert Einstein, Marie Curie, Charles Darwin, Stephen Hawking, Max Planck, Isaac Newton, Thomas Edison Louis Pasteur, Werner Heisenberg, Nikola Tesla, Daniel Gabriel Fahrenheit, Galileu Galilei, dentre muitos outros revolucionários que possamos citar aqui, quem sabe num futuro próximo seja seu nome em destaque!? "
+                android:textColor="@color/Marfim"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paragrafo1" />
+
+            <TextView
+                android:id="@+id/paragrafo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Lembre-se o ideal da Escola Tomorrowland é passar as descobertas e conhecimentos para você! Mas tenha em consideração a terceira lei de Newton “toda ação corresponde a uma reação”, dizemos isso pois cabe a você estudante querer absorver cada informação e ensinamento passados em nossa instituição e usa-las da melhorar maneira em suas futuras experiencias!"
+                android:textColor="@color/Marfim"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paragrafo2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Gold"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/textViewTituloMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_button_normal"
+                android:gravity="center"
+                android:text="Cursos da Tomorrowland"
+                android:textColor="@color/white"
+                android:textSize="14pt"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paragrafo3" />
+
+
+
+            <Button
+                android:id="@+id/buttonMat"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="83dp"
+                android:layout_marginRight="83dp"
+                android:background="@drawable/bg_button_normal"
+                android:layout_marginTop="30dp"
+                android:text="Matemática"
+                android:textAllCaps="false"
+                android:textColor="@color/Marfim"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewTituloMaterial"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <Button
+                android:id="@+id/buttonFis"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="83dp"
+                android:layout_marginRight="83dp"
+                android:background="@drawable/bg_button_normal"
+                android:layout_marginTop="30dp"
+                android:text="Física"
+                android:textAllCaps="false"
+                android:textColor="@color/Marfim"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewTituloMaterial"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <Button
+                android:id="@+id/buttonQui"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="83dp"
+                android:layout_marginRight="83dp"
+                android:background="@drawable/bg_button_normal"
+                android:layout_marginTop="30dp"
+                android:text="Química"
+                android:textAllCaps="false"
+                android:textColor="@color/Marfim"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewTituloMaterial"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <Button
+                android:id="@+id/buttonIng"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="83dp"
+                android:layout_marginRight="83dp"
+                android:background="@drawable/bg_button_normal"
+                android:layout_marginTop="30dp"
+                android:text="Inglês"
+                android:textAllCaps="false"
+                android:textColor="@color/Marfim"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewTituloMaterial"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <Button
+                android:id="@+id/buttonPor"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="83dp"
+                android:layout_marginRight="83dp"
+                android:background="@drawable/bg_button_normal"
+                android:layout_marginTop="30dp"
+                android:text="Português"
+                android:textAllCaps="false"
+                android:textColor="@color/Marfim"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewTituloMaterial"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <Button
+                android:id="@+id/buttonHis"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginLeft="83dp"
+                android:layout_marginRight="83dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_button_normal"
+                android:layout_marginTop="30dp"
+                android:text="Historia"
+                android:textAllCaps="false"
+                android:textColor="@color/Marfim"
+                android:textSize="22dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewTituloMaterial"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
